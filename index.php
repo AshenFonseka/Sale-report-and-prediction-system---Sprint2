@@ -1,58 +1,74 @@
 <!DOCTYPE html>
-<html lang='en'>
-<head>
-<meta charset="utf-8">
-<meta name="description" content="SYSAD MIN OFFICIAL HOME PAGE">
-<meta name="keywords" content="sysad,sysadmin,system administrator">
-<meta name="author" content="azeez">
-<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-
-
-<link rel="stylesheet" type="text/css" href="style/style.css">
-<title>SYSAD MIN</title>
-</head>
-
-<body id="index">
-  <?php 
-  $page="index";
-  include_once "inc/header.inc";
-  include_once "inc/nav.inc";
-?>
-
-<section>
-<div class="con1">
-<h2>
-Who are we?
-</h2>
-<h3>
-SYSAD MIN is a company created by people who wants to create a difference in the world.<br>
-We want people to enjoy their lives freely by letting a group of total strangers look after their privacy.<br>
-we understand what it means to move forward.
-</h3>
-</div>
-<div class="con2">
-<h2>So... Why work with us?</h2>
-<h3>We have all the talent available all around the world. We have more resourcees than nasa itself. There are partners of SISAD MIN all around the world.<br>
-Lets say that you want to get a job done in Africa. We have people there. Even in the united states government.<br>
-Our stelth is so high that the FBI was amazed that we slipped right under their noses.<br>
-There are multiple possibilities if you plan to work with us.</h3>
-</div>
-<div class="con3">
-<h2>Are we trust worthy?</h2>
-<h3>Kind of<br>
-yeah............</h3>
-</div>
-<div class="con1">
-<h2>Disclaimer.</h2>
-<h3>We do not take responsibility to whatever our employees do with your personal data. 
-</h3>
-</div>
-</section>
-
-</body>
-
-<?php 
-	include_once "inc/footer.inc";
-?>
-
-</html>
+<html lang="en">
+	<head>
+	<meta charset= "utf-8" />
+	<meta name="description" content="assignment1, assignment3" />
+	<meta name="keywords" content="Next,"/>
+	<meta name="author" content="Adeepa Uwanpriya Hettiwaththage" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title> Home </title>
+	<link href= "styles/style.css" rel="stylesheet"/> <!--link to the css file-->
+	</head>
+	<body> 
+		
+		<?php
+			include_once("header.inc");
+			include_once("menu.inc");
+		?>
+		
+		<section id="p1">
+		<h1 class="h1">Welcome to NEXT</h1>
+		<p> Thanks for joining with us. So we can help you with so many ways. And <strong><em>new features</em></strong> and <strong><em>updates</em></strong> are released daily.
+		<br/>
+		please be kind enough to help us to create a simple, eye catching, very useful and ad-free social networks.
+		</p>
+		</section>
+		<section id="sec1" >
+			<h2 id="oit">Our IT Services</h2>
+			<ul>     <!--An unordered list-->
+			<li>IT Consulting
+				<ul>
+				<li>IT Strategy & Planning</li>
+				<li>Disaster & Data Recovery</li>
+				<li>IT Security & Risk Assessment</li>
+				<li>Software Consulting</li>
+				<li>Businesws Intelligence</li>
+				<li>ERP Consulting</li>
+				</ul>
+			</li>
+			<li>IT Outsourcing
+				<ul>
+				<li>IT Support</li>
+				<li>Data Backup</li>
+				<li>IT & Services</li>
+				<li>Virtual CIO</li>
+				</ul>
+			</li>
+			<li>Cloud Compututing Services
+				<ul>
+				<li>Microsoft Office 365</li>
+				<li>Microsft Azure</li>
+				<li>Microsft Share Point </li>
+				<li>VoIP</li>
+				<li>Cloud Hosting</li>
+				</ul>
+			</li>
+			<li>IT Infrastructure
+				<ul>
+				<li>IT Procurement</li>
+				<li>IT Installation</li>
+				<li>Cloud & Data Migration</li>
+				<li>Office IT Relocation</li>
+				</ul>
+			</li>
+			</ul>
+		</section> 
+		<section class="tooltip">OUR SERVICE! <!--Enhancement- Tooltip-->
+		<section class="tooltiptext">our philosophy is and always has been that its structures are right here to make our existence less complicated. a continuous and thorough audit of fees, network environment, cloud services, a point of sale, customer relationship management  & accounting software program, databasing software and hardware guarantees that fee for cash is at the vanguard of each unique commercial enterprise service and manner</section>
+		</section>
+		<!--footer-->
+		<?php
+			include_once("footer.inc");
+		?>
+	</body>
+	</html>

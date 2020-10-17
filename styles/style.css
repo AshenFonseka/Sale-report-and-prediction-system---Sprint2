@@ -1,0 +1,246 @@
+/*
+filename: Adeepa Uwanpriya Hettiwaththage
+author: Adeepa Uwanpriya Hettiwaththage
+created: 27/03/2019
+last modified: 31/03/2019
+description:index.html,jobs.html,apply.html, about.html, enhancements.html
+*/
+
+/*Class style */
+.h1 { letter-spacing: .1em; 
+	background-color: #272727;
+	font-variant: small-caps;
+	color:#86C232;
+	font-size: xx-large;
+	font-family: sans-serif;
+	font-weight:200; 
+	font-style:oblique;
+	font-stretch:normal;
+	line-height:170%;}
+	
+/* Wildcard or universal selector */	
+* { font-size:18px;}
+
+/* designing the image that located before the menu by using class style*/	
+.img {display:inline;
+	 margin:0px;
+	 padding:0px;}
+	 
+/* id style */
+#next { font-size: 850%;
+		text-align:center;
+		color:#EDF5E1;
+		background-color:black;
+		margin:0px;
+		padding:0px;}
+/* designingmenu items by using class selector */	
+.menu { display:inline-block;
+		margin:3px;
+		padding: 1em 1em;
+		border: 2px solid #747474;
+		background-color:#272727;
+		color:#ff652f;
+		font-size:1.2em;}
+					
+nav { clear:both;}
+
+/*#id and grouping selector*/ /* first section & second section in index.html */	
+#sec1, #p1 {display:table-cell;}
+	
+/* first section in index.html */	
+#p1 { border: 3px ;
+	 border-radius: 10px;
+	 margin: 1em;
+	 padding: 0.5em;
+	 background: url(images/fade.jpg) repeat-x top left;    
+	 box-shadow: 15px 10px 10px #aaa;
+	 text-align: center; 
+	 float:left;
+	 width:25%}
+	 
+/* Second section in index.html */	
+#sec1 { background: url(images/fade.jpg) repeat-x top left; 
+		float:right;
+		width:55%;
+		margin:1em;
+		padding:0.5em;
+		text-align:left;
+		color:#844D36;
+		box-shadow: 15px 10px 10px #aaa;
+		border-radius: 10px;}
+
+/* #id  */
+#oit {color:#111111;}
+		
+/*element selector */		
+dl {font-family:Verdana,serif; 
+	font-size:large;
+	color:#2D4159;
+	clear:both;
+	width:100%;
+	margin:1em;
+	padding:0.5em;}
+	
+/* jobs.html */	
+#job { text-align:center; /* <h1>,shorthand font property */
+	 font:small-caps bolder 50px verdana, cursive;}
+	
+	/*aside*/
+aside {float:right; 
+	  width:25%;
+	  border:4px solid #2D5F5D;
+	  padding:5px;
+	  margin:5px; }
+
+/*footer*/
+footer {clear:both;
+		width:100%;
+		text-align:center;
+		font-size:small;}
+/*about.html*/
+.head { text-align:center;
+		font:small-caps bolder 50px verdana, cursive;}
+
+		
+.dl {font-family:monospace;
+	 color:#2E1114;
+	 font-size:1.2em;} 
+
+h3 {font-variant:small-caps;
+	font-weight:bold;
+	font-size:x-large;
+	color:#1F6521;}	
+	
+h4 {font-weight:bold;
+	font-size:large;}	
+	
+.li1{font-size:25px;
+	font-family:sans-serif;}
+	
+	
+  /* pseudo element */
+p::first-letter {color: #379683;
+				font-size: 150%;}
+				
+		
+#sec2 dl {width:100%;		
+	font-family:monospace;
+	color:#14A76C;
+	font-size:1.5em;
+	font-weight:bold;
+	float :left;}
+						/* <dt> is on the left and the <dd> on the right in a single line*/
+#sec2 {float:left;
+	   width:70%;}
+	
+#sec2 dl dt {float: left;}	
+
+		
+#sec2 dl dd {float: left;
+			 width: 35%; }
+			 
+			  
+#fig {float:right;
+	  width:25%;
+	  border:4px solid #61892F;
+	  padding:5px;
+	  margin:5px; }
+	  
+#me {width:100%;}
+	  
+#ttt {clear:both;
+	text-align:center;
+	font-size:150%;
+	font-family:cursive;}
+	  
+#timetable {float:left;
+			width:65%;}
+			  
+table, th, td {border:2px solid #C5C6C7;
+				background-color:#29648A;
+				color:#C5C6C7;
+				text-align:center;}
+
+th {font-weight:bold;
+	background-color:#1F2833}
+
+
+#animation {width:100%;		/* email */
+	font-family:monospace;
+	color:#25275D;
+	font-size:1.5em;
+	font-weight:bold;
+	float :left;}
+	
+/* Enhancment-Animation */
+/* The animation code */
+@keyframes example {
+   0%  {background-color:#77A6F7; left:0px; top:0px;}
+  25%  {background-color:#D3E3FC; left:20%; top:0px;}
+  50%  {background-color:#16FFBD; left:50%; top:0px;}
+  75%  {background-color:#439F76; left:20%; top:0px;}
+ 100%  {background-color:#77A6F7; left:0px; top:0px;} }
+
+/* The element to apply the animation to */
+#animation {
+  width: 23%;
+  height: 50%;
+  position:relative;
+  background-color: #FCE181;
+  animation-name: example;
+  animation-duration: 8s; 
+  animation-delay: 2s;}
+  
+ /* Enhancment-tooltip */ 
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 200%;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+.tooltip{float:left;
+		width:20%;}
+		
+/*enhancments.html*/
+.enhp { font-size:24px;
+		text-align:center;
+		box-shadow: 10px 5px #aaa;
+		}
+
+#enh1 {float:left;
+		width:48%;
+		background-color:lightblue;
+		}
+		
+#enh2 {float:right;
+		width:48%;
+		background-color:lightblue;}
+		
+
+/*pseudo classes*/
+a:link {color: blue;}
+
+a:active {color: red;}
+
+input:focus { background-color: lightyellow;}
+
+#fb {display:inline;
+	 margin:0px;
+	 padding:0px;}
