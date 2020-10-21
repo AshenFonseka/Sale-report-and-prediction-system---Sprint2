@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Health Status App</string>
+
+    <string name="title_sneeze">Sneeze</string>
+    <string name="title_blow_nose">Blow Nose</string>
+    <string name="title_take_medication">Take Medication</string>
+</resources>
