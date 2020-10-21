@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="description" content="assignment1"/>
+		<meta name="keywords" content="job application, form"/>
+		<meta name="author" content="Adeepa Uwanpriya Hettiwaththage"/>
+		<title>Job Application page</title>
+		<link href= "styles/style.css" rel="stylesheet" />
+	</head>
+	<body>
+	<h2 id="next"><img class="img" src="images/nextlogo1.png" alt="Next logo" width="250" height="150"/>NeXT</h2>
+		<Nav>
+			<a class="menu" href="index.html">Home</a> 
+			<a class="menu" href="jobs.html">Position Descriptions</a> 
+			<a class="menu" href="apply.html">Job Application</a> 
+			<a class="menu" href="about.html">About me</a> 
+			<a class="menu" href="enhancements.html">Enhancements</a> 
+			<a class="menu" href="mailto:adeepahettiwattage@gmail.com">Email Us</a>
+		</Nav>
+		<h1 id="job">Job Application</h1>
+		<form method="post" action="https://mercury.swin.edu.au/it000000/formtest.php">
+			<p><label for="jobreferenceno">Job refernce number</label> 
+				<input type="text" name= "jobreferenceno" id="jobreferenceno" required="required" pattern="[0-9a-zA-Z]{5}"/>
+			</p>
+			<p><label for="firstname">First Name</label>
+				<input type="text" name="firstname" id="firstname" maxlength="20" required="required" pattern="^[a-zA-Z]{0,20}$"/>
+			</p>
+			<p><label for ="lastname">Last Name</label>
+				<input type="text" name="lastname" id="lastname" required="required" maxlength="20" pattern="^[a-zA-Z]{0,20}$"/>
+			</p>
+			<p> <label for="dob">Date of Birth
+				<input type="date" name= "dob" id="dob" required="required"/></label> <!-- type="text" id="dob" name="dob" size="10" placeholder="dd-mm-yyyy" pattern="\d{1,2}\-\d{1,2}\-\d{4}" required="required" -->
+			</p>
+			<fieldset>
+				<legend>Gender</legend>  <!--radio buttons-->
+				<p><label for="male">
+					<input type="radio" id="male" name="gender" value="male" checked="checked"/> Male </label>
+				</p>
+				<p><label for="female">
+					<input type="radio" id="female" name="gender" value="female"/> Female </label> 
+				</p>
+			</fieldset>
+			<p><label for="streetaddress">Street Address</label>
+				<input type="text" name="streetaddress" id="streetaddress" required="required" maxlength="40">
+			</p>
+			<p><label for="suburb/town">Suburb/town</label>
+				<input type="text" name="suburb/town" id="suburb/town" required="required" maxlength="40">
+			</p>
+			<p><label for="state">State</label>  <!--dropdown-->
+			<select name="state" id="state"  >
+				<option value="vic" selected="selected">VIC</option>			
+				<option value="nsw">NSW</option>
+				<option value="qld">QLD</option>
+				<option value="nt">NT</option>
+				<option value="wa">WA</option>
+				<option value="sa">SA</option>
+				<option value="tas">TAS</option>
+				<option value="act">ACT</option>
+			</select >
+			</p>
+			<p><label for="postcode">Postcode</label> 
+				<input type="text" name= "postcode" id="postcode" required="required" pattern="[0-9]{4}"/>
+			</p>
+			<p><label for="email">Email address</label> 
+				<input type="email" name= "email" id="email" placeholder="name@domain.com" required="required"/> <!--type="text" id="email" name="name" placeholder="name@domain.com" pattern="^.+@.+\..{2,3}$" required="required"-->
+			</p>
+			<p><label for="phoneno">Phone number</label> 
+				<input type="text" name= "phoneno" id="phoneno" required="required" pattern="[0-9 ]{8,12}"/>
+			</p>
+			<p> Skill list <br/>				<!--checkboxs-->
+				<label for="positive">Positive attitude</label> 
+				<input type="checkbox" id="positive" name="skills[]" value="Positive attitude" checked="checked"/>
+				<label for="communication">Communication</label> 
+				<input type="checkbox" id="communication" name="skills[]" value="ommunication"/>
+				<label for="teamwork">Teamwork</label> 
+				<input type="checkbox" id="teamwork" name="skills[]" value="Teamwork"/>
+				<label for="thinking">Thinking Skills</label> 
+				<input type="checkbox" id="thinking" name="skills[]" value="Thinking Skills"/>
+				<label for="planing">Planning and Organisation</label> 
+				<input type="checkbox" id="planing" name="skills[]" value="Planning and Organisation"/>
+				<label for="other">Other Skills...</label> 
+				<input type="checkbox" id="other" name="skills[]" value="Other Skills"/>
+			</p>
+			<p><label for="otherskills">Other Skills</label><br/>
+				<textarea id="otherskills" name="Other Skills" rows="4" cols="40" placeholder="Write your other skills here..."></textarea>
+			</p>
+			<input type= "submit" value="Apply"/>
+			<input type= "reset" value="Reset form"/>
+		</form>
+		<footer>
+		<hr/>
+		<h6> &#169; The Next. All rights reserved.
+		<a href="https://www.facebook.com/"><img id="fb" src="images/facebook.jpg" alt="facebooklogo" width="30" height="20"/></a>
+		</h6>
+		</footer>
+	</body>
+	</html>
